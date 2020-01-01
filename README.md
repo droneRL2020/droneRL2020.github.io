@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Welcome to Seoho Kang's Project Pages
 
 You can use the [editor on GitHub](https://github.com/droneRL2020/droneRL2020.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
