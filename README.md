@@ -1,4 +1,7 @@
-## Welcome to Seoho Kang's Project Pages
+## Welcome to Seoho Kang's Project Page
+
+I have done several projects on robotics and deep learning. This page contains information on some of them. I like to use 
+C++ and Python as main languages. 
 
 You can use the [editor on GitHub](https://github.com/droneRL2020/droneRL2020.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
