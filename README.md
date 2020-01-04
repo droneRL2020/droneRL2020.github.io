@@ -3,46 +3,24 @@
 I have done several projects on robotics and deep learning. This page contains information on some of them. I like to use 
 C++ and Python as main languages. 
 
-You can use the [editor on GitHub](https://github.com/droneRL2020/droneRL2020.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
 ### GoWithRobo: Robotic Shopping Cart finding items for customers
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+As a robotics engineer and founding member of GoWithRobo, I built the whole robot’s HW and SW.
+This robot aims to find location of items for customers in marts. (Tested in 5 Targets, 2 Whole Foods Market, 1 CVS, 1 Home Depot)
+First, simulation. Second, choosing microcontroller. Tried, raspberry pi3, TX2, NUC. Second, choosing 2D lidar. Third, design and developing acuator.(RS232).->Differential driving model with 4 wheels.->Omit weird signal->PID to reduce oscillation. Fourth, odometry. Tried wheel encoder, ICP, lidar baseed. Fifth, adding IMU. Sixth, mapping. Tried, cartographer, gmapping, hector.->challenge in loop closing. Tried saving in bag file. Tried map stiching. Tried to buy VP-016. Seventh,
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
 ### Haptic Watch for Visually Impaired to Grab Object 
+<iframe width="560" height="315" src="https://youtu.be/StuMvEEdssI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/droneRL2020/droneRL2020.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
 ### Imitation Learning Based Self-Driving
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/droneRL2020/droneRL2020.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+
 
 ### Image Based Moving Obstacle Avoidance of Drone Using Deep Reinforcement Learning
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/droneRL2020/droneRL2020.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+
 
 ### AED Drone Delivery Simulator
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
