@@ -11,7 +11,7 @@ First, simulation. Second, choosing microcontroller. Tried, raspberry pi3, TX2, 
 
 
 ### Haptic Watch for Visually Impaired to Grab Object 
-<iframe width="560" height="315" src="https://youtu.be/embed/StuMvEEdssI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://youtube.com/embed/StuMvEEdssI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 
 ### Imitation Learning Based Self-Driving
