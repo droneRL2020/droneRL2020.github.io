@@ -32,7 +32,10 @@ When robot gets stuck it was very hard to escape using traditional move base pac
 
 ### Image Based Moving Obstacle Avoidance of Drone Using Deep Reinforcement Learning
 This project aims to train(DQN, PPO) drone to avoid moving obstacles. I achieved this goal by making Unity(C#) environment and even drone could avoid in stochastic environment(trained without wind, tested with wind). 
-Please check(https://github.com/droneRL2020/Dynamic_obstacle_avoidance_unity) for results and code.
+Please check link below to check results and code.
+
+Link-https://github.com/droneRL2020/Dynamic_obstacle_avoidance_unity
+
 Plus, this project ambitiously aimed to do "Simulation to Real" which makes deep reinforcement learning model robust to domain changes.
 I have tried 4 categories.
 1. Autoencoders(DAE, beta-VAE, DARLA): I aimed for autoencoder to output same background so that input image simplifies to same background and the moving obstacle. However, all three models(DAE, beta-VAE, DARLA) could not describe the position changes of the moving obstacles. All three models over simplified so that moving obstacle's position in the image changed after the process of autoencoder.
@@ -43,11 +46,11 @@ I have tried 4 categories.
 ### Haptic Watch for Visually Impaired to Grab Object 
 This project aims to make heptic watch that enables the blind grab object they want. I utilized ssd and tf-lite to detect object and in order to output 10Hz actuation I attached Coral Edge TPU on the raspberry pi3. I extracted object's center and if the center was located in among 5 regions(left, right, up, down, forward) it ouptuts vibration to the watch. To get user input, I made an app using google voice to text.
 <img align="left" width="260" height="200" src="https://user-images.githubusercontent.com/34183439/71782272-a644d300-301b-11ea-8e91-d4c35b7a0a4c.JPG">
-<width="260" height="200" src="https://user-images.githubusercontent.com/34183439/71782296-e99f4180-301b-11ea-8ef9-843424a1dd9e.JPG">
+<img width="260" height="200" src="https://user-images.githubusercontent.com/34183439/71782296-e99f4180-301b-11ea-8ef9-843424a1dd9e.JPG">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/StuMvEEdssI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Imitation Learning Based Self-Driving
 This project aims to make a camera-based self-driving car using imitation learning. It self-drives hallway by only using a camera. I faced problem of the non-markovian, and multi-model behaviors and I plan to solve this by combining RNN.
-Please visit(https://github.com/droneRL2020/End-to-end-self-driving) this repository to see code and result of this project.
-
+Please visit linke below to see code and result of this project.
+Link - https://github.com/droneRL2020/End-to-end-self-driving
 ### AED Drone Delivery Simulator
