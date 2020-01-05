@@ -8,8 +8,8 @@ I like to use C++ and Python as main languages.
 GoWithRobo provides robotic shopping cart in marts. The cart helps customers finding items in marts and especially visually impaired customer can shop independently with our cart. 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/gzfZvT5ImeY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-As a robotics engineer and founding member of GoWithRobo, I built the whole robot’s HW and SW from scratch which end up tested in 5 Targets, 2 Whole Foods Market, 1 CVS, 1 Home Depot. There were briefly 9 steps to accomplish this goal.
-Step1.	Simulation
+As a robotics engineer and founding member of GoWithRobo, I built the whole robot’s HW and SW from scratch which end up tested in 5 Targets, 2 Whole Foods Market, 1 CVS, 1 Home Depot. There were briefly 10 steps to accomplish this goal.
+1.	Simulation
 Before purchasing lidar, I made Gazebo simulation of mart-like environment and tested the performance of mapping and localization with different lidar settings. I learned lidar's distance affects directly to localization performance in large environment like marts.
 2.	Choosing microcontrollers
 I have tried raspberry pi3, Jetson TX2 and Intel NUC. Other than RTAB-Map, every task depended a lot on CPU performance. After using NUC, most of the errors occured by frequency were solved. I tested AWS EC2 but this led problem because of poor internet reliablity in many places in the US.
@@ -33,13 +33,16 @@ When robot gets stuck it was very hard to escape using traditional move base pac
 ### Haptic Watch for Visually Impaired to Grab Object 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/StuMvEEdssI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-
-### Imitation Learning Based Self-Driving
-
-
-
 ### Image Based Moving Obstacle Avoidance of Drone Using Deep Reinforcement Learning
+This project aims to train(DQN, PPO) drone to avoid moving obstacles. I achieved this goal by making Unity(C#) environment and even drone could avoid in stochastic environment(trained without wind, tested with wind). 
+Please check(https://github.com/droneRL2020/Dynamic_obstacle_avoidance_unity) for results and code.
+Plus, this project ambitiously aimed to do "Simulation to Real" which makes deep reinforcement learning model robust to domain changes.
+I have tried 4 categories.
+1. Autoencoders(DAE, beta-VAE, DARLA): I aimed for autoencoder to output same background so that input image simplifies to same background and the moving obstacle. However, all three models(DAE, beta-VAE, DARLA) could not describe the position changes of the moving obstacles. All three models over simplified so that moving obstacle's position in the image changed after the process of autoencoder.
+2. Optical flow: I utilized Farneback algorithm. It worked well in an ideal setting but when obstacle's speed changes especially when obstacle was moving too slow or too fast, the algorithm did not catch moving obstacle.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_IH0HoHp17U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+### Imitation Learning Based Self-Driving
 
 
 ### AED Drone Delivery Simulator
