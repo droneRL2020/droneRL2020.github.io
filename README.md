@@ -5,10 +5,10 @@ I use C++ and Python as main languages.
 
 ### GoWithRobo: Robotic Shopping Cart finding items for customers
 
-GoWithRobo provides robotic shopping cart in marts. The cart helps customers finding items in marts and especially visually impaired customer can shop independently with our cart. 
+GoWithRobo provides the robotic shopping cart in marts. The cart helps customers to find items in marts and especially visually impaired customer can shop independently with using this cart.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/gzfZvT5ImeY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-As a robotics engineer and founding member of GoWithRobo, I built the whole robot’s HW and SW from scratch which end up tested in 5 Targets, 2 Whole Foods Market, 1 CVS, 1 Home Depot. There were briefly 10 steps to accomplish this goal.
+As a robotics engineer and founding member of GoWithRobo, I built HW and SW of the whole robot from the scratch which accomplished to test in 5 Targets, 2 Whole Foods Markets, 1 CVS and 1 Home Depot. There were briefly 10 steps to achieve this goal.
 1.	Simulation
 Before purchasing lidar, I made Gazebo simulation of mart-like environment and tested the performance of mapping and localization with different lidar settings. I learned lidar's distance affects directly to localization performance in large environment like marts.
 2.	Choosing microcontrollers
