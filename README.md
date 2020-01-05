@@ -32,7 +32,9 @@ When robot gets stuck it was very hard to escape using traditional move base pac
 
 ### Haptic Watch for Visually Impaired to Grab Object 
 This
-![IMG_3713](https://user-images.githubusercontent.com/34183439/71782272-a644d300-301b-11ea-8e91-d4c35b7a0a4c.JPG)
+<img align="left" width="100" height="100" src="https://user-images.githubusercontent.com/34183439/71782272-a644d300-301b-11ea-8e91-d4c35b7a0a4c.JPG">
+<img align="right" width="100" height="100" src="https://user-images.githubusercontent.com/34183439/71782296-e99f4180-301b-11ea-8ef9-843424a1dd9e.JPG">
+
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/StuMvEEdssI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
