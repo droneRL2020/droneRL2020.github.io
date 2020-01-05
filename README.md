@@ -61,5 +61,5 @@ Please visit linke below to see code and result of this project.
 This project aims to prove the potential of AED drone delivery by simulating AED drone delivery time based on real cardiac arrest and ambulance devliery time data occured over 5 years in Seoul. My role, as an intern, was to make drone delivery time database for each delivery distance and height by simulating drone(V-Rep). I also gathered flight time database by flying real-drone in windy and snowy weather. I utilized "Mission Planner" and "dronekitAPI" to do waypoint flight. After flying real-drone I added average arming time of the drone. I not only validated simulation but also could add threshold time in different weathers.  
 
 ![AED Drone](https://user-images.githubusercontent.com/34183439/71782907-e22f6680-3022-11ea-9901-92c7ca04e41c.PNG)
-![AED Drone2](https://user-images.githubusercontent.com/34183439/71782909-e65b8400-3022-11ea-9e40-0b2f872c3f00.PNG)
-![AED Drone3](https://user-images.githubusercontent.com/34183439/71782973-b95ba100-3023-11ea-946f-ac9e0830a5ce.png)
+![AED Drone2](https://user-images.githubusercontent.com/34183439/71782909-e65b8400-3022-11ea-9e40-0b2f872c3f00.PNG)  
+<iframe width="560" height="315" src="https://www.youtube.com/embed/aKwoe8s6SYg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
