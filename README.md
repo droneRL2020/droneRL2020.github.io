@@ -32,6 +32,8 @@ When robot gets stuck it was very hard to escape using traditional move base pac
 
 ### Haptic Watch for Visually Impaired to Grab Object 
 This
+![IMG_3713](https://user-images.githubusercontent.com/34183439/71782272-a644d300-301b-11ea-8e91-d4c35b7a0a4c.JPG)
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/StuMvEEdssI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Image Based Moving Obstacle Avoidance of Drone Using Deep Reinforcement Learning
@@ -44,7 +46,6 @@ I have tried 4 categories.
 3. Adversarial noise: Since, this project's goal is "Simulation to Real-world", I imagined what if there is a noise(filter) that makes simulation + noise = real world. So, I made a classifier that classifies two different domain images. After this, I trained an adversarial noise. The classifier classified 'A domain image+noise' as B domain. With this noise, I trained PPO and tested in different domain. Drone could avoid better in unseen domain.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/_IH0HoHp17U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/_IH0HoHp17U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ### Imitation Learning Based Self-Driving
 
 
