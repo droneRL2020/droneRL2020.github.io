@@ -56,3 +56,8 @@ Please visit linke below to see code and result of this project.
 
 [End to End Self-Driving Code&Result](https://github.com/droneRL2020/End-to-end-self-driving)
 ### AED Drone Delivery Simulator
+This project aims to prove the potential of AED drone delivery by simulating AED delivery based on real cardiac arrest data over 5 years in Seoul. My role, as an intern, was to make drone delivery time database for each delivery distance and height by simulating drone(V-Rep). I also flew real drone in windy and snowy weather. I added average arming time of the drone. By flying real-drone I not only validated simulation but also could add threshold in different weathers.  
+
+![AED Drone](https://user-images.githubusercontent.com/34183439/71782907-e22f6680-3022-11ea-9901-92c7ca04e41c.PNG)
+![AED Drone2](https://user-images.githubusercontent.com/34183439/71782909-e65b8400-3022-11ea-9e40-0b2f872c3f00.PNG)
+![AED Drone3](https://user-images.githubusercontent.com/34183439/71782973-b95ba100-3023-11ea-946f-ac9e0830a5ce.png)
