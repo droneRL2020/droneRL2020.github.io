@@ -1,7 +1,7 @@
 ## Welcome to Seoho Kang's Project Page
 
-I have done several projects on robotics and deep learning. This page contains information on some of them. I like to use 
-C++ and Python as main languages. 
+This pages contain my projects on robotics and deep learning I have done so far. 
+I like to use C++ and Python as main languages. 
 
 ### GoWithRobo: Robotic Shopping Cart finding items for customers
 
