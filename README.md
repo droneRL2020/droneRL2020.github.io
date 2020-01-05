@@ -31,6 +31,7 @@ I tuned parameters of DWA local planner and Teb local planner. Both had pros and
 When robot gets stuck it was very hard to escape using traditional move base package. I chose to use “move_base_flex” and wrote a script to customize old version of move_base. I could utilize pros of multiple recovery behaviors and multiple planners.
 
 ### Haptic Watch for Visually Impaired to Grab Object 
+This
 <iframe width="560" height="315" src="https://www.youtube.com/embed/StuMvEEdssI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Image Based Moving Obstacle Avoidance of Drone Using Deep Reinforcement Learning
@@ -39,7 +40,9 @@ Please check(https://github.com/droneRL2020/Dynamic_obstacle_avoidance_unity) fo
 Plus, this project ambitiously aimed to do "Simulation to Real" which makes deep reinforcement learning model robust to domain changes.
 I have tried 4 categories.
 1. Autoencoders(DAE, beta-VAE, DARLA): I aimed for autoencoder to output same background so that input image simplifies to same background and the moving obstacle. However, all three models(DAE, beta-VAE, DARLA) could not describe the position changes of the moving obstacles. All three models over simplified so that moving obstacle's position in the image changed after the process of autoencoder.
-2. Optical flow: I utilized Farneback algorithm. It worked well in an ideal setting but when obstacle's speed changes especially when obstacle was moving too slow or too fast, the algorithm did not catch moving obstacle.
+2. Optical flow: I utilized Farneback algorithm. It worked well in an ideal setting but when obstacle's speed changes especially when obstacle was moving too slow or too fast, the algorithm did not catch moving obstacle. Since Farneback algorithm generates filter by itself I simply fed (current image - previous image) as an image and let PPO learn to understand the moving obstacle's velocity. This worked not only well with background change but also was robust to moving obstacle's texture, size changes.
+3. Adversarial noise: Since, this project's goal is "Simulation to Real-world", I imagined what if there is a noise(filter) that makes simulation + noise = real world. So, I made a classifier that classifies two different domain images. After this, I trained an adversarial noise. The classifier classified 'A domain image+noise' as B domain. With this noise, I trained PPO and tested in different domain. Drone could avoid better in unseen domain.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_IH0HoHp17U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/_IH0HoHp17U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ### Imitation Learning Based Self-Driving
