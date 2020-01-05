@@ -34,7 +34,7 @@ When robot gets stuck it was very hard to escape using traditional move base pac
 This project aims to train(DQN, PPO) drone to avoid moving obstacles. I achieved this goal by making Unity(C#) environment and even drone could avoid in stochastic environment(trained without wind, tested with wind). 
 Please check link below to check results and code.  
 
-Link-https://github.com/droneRL2020/Dynamic_obstacle_avoidance_unity
+[Moving Obstacle Avoidance Drone Code&Result](https://github.com/droneRL2020/Dynamic_obstacle_avoidance_unity)
 
 Plus, this project ambitiously aimed to do "Simulation to Real" which makes deep reinforcement learning model robust to domain changes.
 I have tried 4 categories.
@@ -54,5 +54,5 @@ This project aims to make heptic watch that enables the blind grab object they w
 This project aims to make a camera-based self-driving car using imitation learning. It self-drives hallway by only using a camera. I faced problem of the non-markovian, and multi-model behaviors and I plan to solve this by combining RNN.
 Please visit linke below to see code and result of this project.
 
-[Code](https://github.com/droneRL2020/End-to-end-self-driving)
+[End to End Self-Driving Code&Result](https://github.com/droneRL2020/End-to-end-self-driving)
 ### AED Drone Delivery Simulator
