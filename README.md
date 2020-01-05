@@ -45,7 +45,7 @@ I have tried 4 categories.
 
 ### Haptic Watch for Visually Impaired to Grab Object 
 This project aims to make heptic watch that enables the blind grab object they want. I utilized ssd and tf-lite to detect object and in order to output 10Hz actuation I attached Coral Edge TPU on the raspberry pi3. I extracted object's center and if the center was located in among 5 regions(left, right, up, down, forward) it ouptuts vibration to the watch. To get user input, I made an app using google voice to text.
-<img align="left" width="260" height="200" src="https://user-images.githubusercontent.com/34183439/71782272-a644d300-301b-11ea-8e91-d4c35b7a0a4c.JPG">
+<img width="260" height="200" src="https://user-images.githubusercontent.com/34183439/71782272-a644d300-301b-11ea-8e91-d4c35b7a0a4c.JPG">
 <img width="260" height="200" src="https://user-images.githubusercontent.com/34183439/71782296-e99f4180-301b-11ea-8ef9-843424a1dd9e.JPG">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/StuMvEEdssI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
