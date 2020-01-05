@@ -41,22 +41,24 @@ I have tried 4 categories.
 1. Autoencoders(DAE, beta-VAE, DARLA): I aimed for autoencoder to output same background so that input image simplifies to same background and the moving obstacle. However, all three models(DAE, beta-VAE, DARLA) could not describe the position changes of the moving obstacles. All three models over simplified so that moving obstacle's position in the image changed after the process of autoencoder.
 2. Optical flow: I utilized Farneback algorithm. It worked well in an ideal setting but when obstacle's speed changes especially when obstacle was moving too slow or too fast, the algorithm did not catch moving obstacle. Since Farneback algorithm generates filter by itself I simply fed (current image - previous image) as an image and let PPO learn to understand the moving obstacle's velocity. This worked not only well with background change but also was robust to moving obstacle's texture, size changes.
 3. Adversarial noise: Since, this project's goal is "Simulation to Real-world", I imagined what if there is a noise(filter) that makes simulation + noise = real world. So, I made a classifier that classifies two different domain images. After this, I trained an adversarial noise. The classifier classified 'A domain image+noise' as B domain. With this noise, I trained PPO and tested in different domain. Drone could avoid better in unseen domain.
-<iframe width="560" height="315" src="https://www.youtube.com/embed/_IH0HoHp17U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_IH0HoHp17U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
 
 ### Haptic Watch for Visually Impaired to Grab Object 
 This project aims to make heptic watch that enables the blind grab object they want. I utilized ssd and tf-lite to detect object and in order to output 10Hz actuation I attached Coral Edge TPU on the raspberry pi3. I extracted object's center and if the center was located in among 5 regions(left, right, up, down, forward) it ouptuts vibration to the watch. To get user input, I made an app using google voice to text.  
 
 <img align="left" width="280" height="200" src="https://user-images.githubusercontent.com/34183439/71782272-a644d300-301b-11ea-8e91-d4c35b7a0a4c.JPG">
 <img width="280" height="200" src="https://user-images.githubusercontent.com/34183439/71782296-e99f4180-301b-11ea-8ef9-843424a1dd9e.JPG">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/StuMvEEdssI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/StuMvEEdssI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
 
 ### Imitation Learning Based Self-Driving
 This project aims to make a camera-based self-driving car using imitation learning. It self-drives hallway by only using a camera. I faced problem of the non-markovian, and multi-model behaviors and I plan to solve this by combining RNN.
 Please visit linke below to see code and result of this project.
 
-[End to End Self-Driving Code&Result](https://github.com/droneRL2020/End-to-end-self-driving)
+[End to End Self-Driving Code&Result](https://github.com/droneRL2020/End-to-end-self-driving)  
+
+
 ### AED Drone Delivery Simulator
-This project aims to prove the potential of AED drone delivery by simulating AED delivery based on real cardiac arrest data over 5 years in Seoul. My role, as an intern, was to make drone delivery time database for each delivery distance and height by simulating drone(V-Rep). I also flew real drone in windy and snowy weather. I added average arming time of the drone. By flying real-drone I not only validated simulation but also could add threshold in different weathers.  
+This project aims to prove the potential of AED drone delivery by simulating AED drone delivery time based on real cardiac arrest and ambulance devliery time data occured over 5 years in Seoul. My role, as an intern, was to make drone delivery time database for each delivery distance and height by simulating drone(V-Rep). I also gathered flight time database by flying real-drone in windy and snowy weather. I utilized "Mission Planner" and "dronekitAPI" to do waypoint flight. After flying real-drone I added average arming time of the drone. I not only validated simulation but also could add threshold time in different weathers.  
 
 ![AED Drone](https://user-images.githubusercontent.com/34183439/71782907-e22f6680-3022-11ea-9901-92c7ca04e41c.PNG)
 ![AED Drone2](https://user-images.githubusercontent.com/34183439/71782909-e65b8400-3022-11ea-9e40-0b2f872c3f00.PNG)
