@@ -54,5 +54,5 @@ This project aims to make heptic watch that enables the blind grab object they w
 This project aims to make a camera-based self-driving car using imitation learning. It self-drives hallway by only using a camera. I faced problem of the non-markovian, and multi-model behaviors and I plan to solve this by combining RNN.
 Please visit linke below to see code and result of this project.
 
-https://github.com/droneRL2020/End-to-end-self-driving
+[Code](https://github.com/droneRL2020/End-to-end-self-driving)
 ### AED Drone Delivery Simulator
