@@ -38,21 +38,21 @@ Please refer to the link below to check the results and code.
 
 Plus, this project ambitiously aimed to do "Simulation to Real" which makes deep reinforcement learning model robust to domain changes.
 I have tried 4 categories as below.
-1. Autoencoders(DAE, beta-VAE, DARLA): I aimed for autoencoder to output same background so that input image simplifies to same background and the moving obstacle. However, all three models(DAE, beta-VAE, DARLA) could not describe the position changes of the moving obstacles. All three models have over simplified so that the position of moving obstacle in the image changed after the process of autoencoder.
-2. Optical flow: I utilized Farneback algorithm. It worked well in an ideal setting but when the speed of obstacle has changed, especially when obstacle was moving too slow or too fast, the algorithm did not catch the moving obstacle. Since Farneback algorithm generates filter by itself, I simply fed (current image - previous image) as an image and let PPO learn to understand the moving obstacle's velocity. This worked well not only with background change but also moving obstacle's texture and size changes.
+1. Autoencoders(DAE, beta-VAE, DARLA): I aimed for autoencoder to output same background so that input image simplifies to the same background and the moving obstacle. However, all three models(DAE, beta-VAE, DARLA) could not describe the position changes of the moving obstacles. All three models have over simplified so that the position of moving obstacle in the image have changed after the process of autoencoder.
+2. Optical flow: I utilized the Farneback algorithm. It worked well in an ideal setting but when the speed of obstacle has changed, especially when obstacle was moving too slow or too fast, the algorithm did not catch the moving obstacle. Since Farneback algorithm has generated filter by itself, I simply fed (current image - previous image) as an image and let PPO learn to understand the moving obstacle's velocity. This worked well not only with background change but also moving obstacle's texture and size changes.
 3. Adversarial noise: Since this project aimed at "Simulation to Real-world", I imagined what if there is a noise(filter) that makes "simulation + noise = real world". So, I made the classifier that classifies two different domain images. After this, I trained an adversarial noise. The classifier classified 'A domain image+noise' as B domain. With this noise, I trained PPO and tested in different domain. Drone could avoid better in unseen domain.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/_IH0HoHp17U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
   
 ### Haptic Watch for Visually Impaired to Grab Object 
-This project aims to make heptic watch that enables the blind grab object they want. I utilized ssd and tf-lite to detect object and in order to output 10Hz actuation I attached Coral Edge TPU on the raspberry pi3. I extracted object's center and if the center was located in among 5 regions(left, right, up, down, forward) it ouptuts vibration to the watch. To get user input, I made an app using google voice to text.  
+This project aims to make heptic watch which enables the blind to grab the object they want. I utilized ssd and tf-lite to detect object and in order to output 10Hz actuation, I attached Coral Edge TPU on the raspberry pi3. I extracted the center of the object and if the center was located in among 5 regions(left, right, up, down, forward) it output vibration to the watch. To attain the user's input, I made an app using google voice to text.  
 
 <img align="left" width="280" height="200" src="https://user-images.githubusercontent.com/34183439/71782272-a644d300-301b-11ea-8e91-d4c35b7a0a4c.JPG">
 <img width="280" height="200" src="https://user-images.githubusercontent.com/34183439/71782296-e99f4180-301b-11ea-8ef9-843424a1dd9e.JPG">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/StuMvEEdssI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
   
 ### Imitation Learning Based Self-Driving
-This project aims to make a camera-based self-driving car using imitation learning. It self-drives hallway by only using a camera. I faced problem of the non-markovian, and multi-model behaviors and I plan to solve this by combining RNN.
-Please visit linke below to see code and result of this project.
+This project aims to make a camera-based self-driving car using imitation learning. It self-drives hallway by only using a camera. I faced the problem of the non-markovian, and multi-model behaviors and I planed to solve this by combining RNN.
+Please visit the link below to see code and result of this project.
 
 [End to End Self-Driving Code&Result](https://github.com/droneRL2020/End-to-end-self-driving)  
 
