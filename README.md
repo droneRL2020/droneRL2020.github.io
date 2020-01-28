@@ -5,7 +5,7 @@ I use C++ and Python as main languages.
 
 ### GoWithRobo: Robotic Shopping Cart finding items for customers
 
-GoWithRobo provides the robotic shopping cart in marts. The cart helps customers to find items in marts and especially visually impaired customer can shop independently with using this cart.
+GoWithRobo provides the robotic shopping cart in marts. The cart helps customers to find items in marts and especially visually impaired customer can shop independently using this cart.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/gzfZvT5ImeY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 As a robotics engineer and founding member of GoWithRobo, I built HW and SW of the whole robot from the scratch to prototype and got down to test in 5 Targets, 2 Whole Foods Markets, 1 CVS and 1 Home Depot. There were briefly 10 steps to accomplish this execution.
